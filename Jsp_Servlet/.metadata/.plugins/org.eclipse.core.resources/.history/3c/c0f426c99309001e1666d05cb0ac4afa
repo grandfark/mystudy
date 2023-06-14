@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex03_loginOK.jsp</title>
+</head>
+<body>
+	<%
+	String id = request.getParameter("userId");
+	String pw = request.getParameter("pwd");
+	
+	String[]hobbys = request.getParameterValues("hobby");//동일한 이름의 checkbox들을 배열로 처리하는 방식
+	
+%>
+	당신의 id:
+	<%= id %><br> 당신의 pw:
+	<%= pw %><br> 당신의 취미는:
+	<%
+	if(hobbys != null){
+		for(int i = 0;i<hobbys.length;)
+	}//if end
+%>
+</body>
+</html>

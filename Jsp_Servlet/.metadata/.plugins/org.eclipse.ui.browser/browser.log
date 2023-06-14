@@ -1,0 +1,9 @@
+
+6월 14, 2023 09:15:31.381 NEW SESSION
+6월 14, 2023 09:15:31.381 [15228:4320:0614/091531.380:ERROR:get_updates_processor.cc(264)] PostClientToServerMessage() failed during GetUpdates with error 2
+6월 14, 2023 10:58:33.280 [14668:3972:0614/105833.279:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+6월 14, 2023 11:45:34.62 기존 브라우저 세션에서 여는 중입니다.
+6월 14, 2023 11:45:34.76 기존 브라우저 세션에서 여는 중입니다.
+6월 14, 2023 11:45:34.79 기존 브라우저 세션에서 여는 중입니다.
+6월 14, 2023 11:45:34.103 기존 브라우저 세션에서 여는 중입니다.
+6월 14, 2023 11:45:34.245 기존 브라우저 세션에서 여는 중입니다.

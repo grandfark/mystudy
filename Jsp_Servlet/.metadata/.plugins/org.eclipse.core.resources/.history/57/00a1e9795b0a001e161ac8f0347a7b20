@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<jsp:useBean id="e" class="com.kosa.quiz.GiftVO"/>
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>quiz.jsp</title>
+</head>
+<body>
+상품이름:<jsp:setProperty property="gname" name="g"/>
+상품번호:<jsp:setProperty property="gnumber" name="g"/>
+상품최고가:<jsp:setProperty property="gstart" name="g"/>
+상품최저가:<jsp:setProperty property="gend" name="g"/>
+
+</body>
+</html>

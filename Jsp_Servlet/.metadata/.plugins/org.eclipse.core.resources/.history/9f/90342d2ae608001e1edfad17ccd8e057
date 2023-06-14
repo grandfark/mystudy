@@ -1,0 +1,14 @@
+/* index.js*/
+function login_check() {
+	let ff = document.ff;
+	
+	if (ff.id.value == "") {
+		alert("id가 입력되지 않았습니다.");
+		ff.id.focus();
+		return false;
+	} else if (ff.pwd.value == "") {
+		alert("암호가 입력되지 않았습니다.");
+		ff.pwd.focus();
+		return false;
+	}
+}

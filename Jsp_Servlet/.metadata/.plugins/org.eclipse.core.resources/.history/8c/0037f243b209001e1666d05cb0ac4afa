@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex04_page.jsp</title>
+</head>
+<body>
+<h2>page : import & out object & buffer</h2>
+<%
+boolean flag = true;
+if(10 > 5){
+%>
+값은 : <font color="red"><%= flag %></font>
+<%
+}//if end
+%>
+</body>
+</html>

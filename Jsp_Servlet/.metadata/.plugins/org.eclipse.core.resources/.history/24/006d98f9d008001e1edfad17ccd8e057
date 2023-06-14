@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>loginForm.html</title>
+</head>
+<body>
+<h1>Login HTML</h1>
+<table>
+	<form action ="" method="post"></form>
+	
+	</table>
+</body>
+</html>
