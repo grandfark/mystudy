@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tag - form: get/post 전송방식</title>
+</head>
+<body>
+	<h2>전송방식:post</h2>
+	<!-- post 전송 방식: 약한 보안  -->
+		<form action="../jsp/result.jsp" method="post">
+			이름: <input type="text" name="name" id="name" required placeholder="이름을 입력하십시오"><br>
+			비번: <input type="password" name="pwd" id="pwd" required placeholder="비번을 입력하십시오"><br>
+			메일: <input type="email" name="mail" id="mail" placeholder="ex@m.com"
+			required><br><br>
+	
+			<input type="submit" value="전송">&nbsp; &nbsp;
+			<input type="reset" value="취소">
+		</form>	
+	
+	<h2>전송방식: get</h2>
+	<form action="../jsp/result.jsp" method="get">
+<!-- 	get 방식 전송: 글자수에 제한이 있고 255자, 보안에 취약하다. -->
+		이름: <input type="text" name="name" id="name" placeholder="이름을 입력하십시오"><br>
+		비번: <input type="password" name="pwd" id="pwd" placeholder="비번을 입력하십시오"><br>
+		메일: <input type="email" name="mail" id="mail" placeholder="메일을 입력하십시오"><br><br>
+
+		<input type="submit" value="전송">&nbsp; &nbsp;
+		<input type="reset" value="취소">
+	</form>
+</body>
+</html>

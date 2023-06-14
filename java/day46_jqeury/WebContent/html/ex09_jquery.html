@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex09_jquery.html</title>
+<!-- CDN 방식 -->
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+<!-- file 방식 링크 -->
+<!-- <script type="text/javascript" src="../js/"></script> -->
+</head>
+<body>
+	<header>
+		<h2>JQuery Sample</h2>
+	</header>
+
+	<input id="imputdemo" value="">
+	<input type="button" value="변환1">
+	<input type="button" value="변환2">
+	<div class="welcome"></div>
+	<div class="welcome"></div>
+	<div id="demo">
+	
+	<div class="inner">Create jQuery Test</div>
+	</div><hr>
+	15px
+	<div id="name">이부분에 클릭이벤트가 발생하면 자신이름 출력하기</div>
+	
+<script type="text/javascript">
+	$(function(){
+
+			$('#name').on('click',function(e){
+			$(this).html('park')
+					.css('font-size','30px')
+			});
+	//	document.getElementsByIdTagName('h2')[0].style.color = 'red';
+	//	$('h2').css({'color':'pink'});
+	//체이닝 방식
+	//on(1,2); on('event',function(){})
+/*	$('.welcome').html('hello world Daebo th2')
+				 .css('background-color','orange')
+				 .on('click mousemove keyup',function(){
+ 	//			 .click(function(){
+					 $(this).css('background-color','gray')
+				 });
+*/
+			$('.welcome').html('hello world Daebo th2')
+			.css('background-color','orange')
+			.on('click',function(e){
+// 				$(".welcome").hide();
+// 				console.log(e);
+				let clicked = e.target;
+				console.log(clicked);
+				$(this).css('background-color','red')
+			});
+	// 	$('h2').css('color','aqua');
+	// 	#demo.inner 글자에 언더라인
+	// 	$('#demo.inner').css('text-decoration','underline')
+	// 	아래쪽에 5px두께 실선
+	// 	$('#demo.inner').css('border-bottom','5px solid red');
+	//기울기
+// 	$('#demo.inner').css('transform','rotate(45deg)')
+// 	$('#demo.inner').css('opacity','0.5')
+// 	$('#demo.inner').css({
+// 		'text-decoration':'underline',
+// 		'border-bottom':'5px solid red',
+// 		'transform':'rotate(45deg)',
+// 		'opacity':.3
+// 		})
+		//${'선택자'}.on('이벤트 종료',할 일)
+	// 		$('#demo').on('mouseover',function(){
+	// 		$('.inner').css('background','green');
+	// 	});
+	// 	$('#demo').on('mouseout',function(){
+	// 		$('.inner').css('background','white').html('글자변경');
+	// 	});
+	//여러 선택자에 이벤트 추가
+	// 	$('#demo, h2, div').mouseover(function(){
+	// 		$(this).css('bakcground','yellow').html('daebo th2');
+	// 	});
+	});
+</script>
+</body>
+</html>

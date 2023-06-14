@@ -1,0 +1,21 @@
+@charset "UTF-8";
+div{	
+	color:lightblue!important;
+	border:3px solid ; 
+	width:100px;
+	height:100px;
+	background-image:
+	url('https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13268179&menuNo=200018');
+/* 	url('../images/2.jpg'); */
+	
+}
+#color_yellow{/* 100 */
+	color:yellow;
+}
+.color_green{/* 10 */
+	color:green;
+}
+*{/* 0 */
+	color: darkblue;
+}
+
