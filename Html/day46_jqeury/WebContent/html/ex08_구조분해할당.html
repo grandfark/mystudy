@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex08_구조분해할당.html</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<!-- <link href="../css/main.scss" rel="stylesheet"> -->
+<script defer src="../js/main6.js" type="text/javascript"></script>
+<script type="text/javascript">
+	let a, b, rest;
+	a = 10;
+	b = 20;
+	[ a, b ] = [ 10, 20 ];
+	document.write(a + "<br/>")
+	console.log(a);
+	document.write(b + "<br/>")
+	console.log(b);
+	
+	[a,b,...rest] = [1,2,3,4,5];//rest 가 3,4,5를 가져간다.
+	document.write(rest + "<br/>")
+	console.log(rest);
+	document.write("<hr>")
+	
+	
+	const numbers = [1,2,3,4];
+	let fruits = ['사과','바나나','토마토'];
+	fruits.forEach( (item,index,array) => {
+// 	fruits.forEach( function(item,index,array) { //function(1,2,3)
+		document.write(item, index + "<br/><p>")
+ 		//document.write(array+"<hr/>")
+	});
+	
+	document.write('<hr>');
+// 	const x = fruits.map(function(fruits, i){
+	const x = fruits.map((fruit , i ) =>{
+// 		document.write(`${fruits} - ${index} <br/>`);
+//		return `${fruit} - ${i} <br/>`
+		return {
+			id : i 
+			,name : fruit
+		}
+	});
+	
+	document.write(`x: ${x[0].id}`);
+	document.write(x[0].name+"<br/><br/>");
+	document.write("<hr>");
+	let newLength = fruits.push('오렌지');
+	document.write(fruits + "<br/></p>");
+	document.write(newLength+"<hr/>");
+	
+
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
