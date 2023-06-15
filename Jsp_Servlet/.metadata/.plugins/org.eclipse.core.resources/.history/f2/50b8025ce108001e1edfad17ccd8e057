@@ -1,0 +1,19 @@
+/* index.js*/
+function login_check(){
+	
+var id = document.getElementsByName("id");
+var pwd = document.getElementById("pwd");
+
+	if(id.value == ""){
+		alert("id가 입력되지 않았습니다.");
+		id.focus();
+		return false;
+	}else if(pwd.value == ""){
+		alert("암호가 입력되지 않았습니다.");
+		pwd.focus();
+		return false;
+	}else{
+		alert("정보를 제출합니다.");
+		submit();
+	}
+};

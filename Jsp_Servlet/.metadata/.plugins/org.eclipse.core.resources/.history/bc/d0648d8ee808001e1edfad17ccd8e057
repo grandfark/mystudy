@@ -1,0 +1,19 @@
+/* index.js*/
+function login_check() {
+	let ff = document.ff;
+	
+	if (ff.id.value == "") {
+		confirm("id가 입력되지 않았습니다.");
+		ff.id.focus();
+		return false;
+	}else if(ff.id.value>2||ff.id.value<=4){
+		onfirm("id를 2글자 이상 .");
+		ff.id.focus();
+		return false;
+	}
+	else if (ff.pwd.value == "") {
+		confirm("암호가 입력되지 않았습니다.");
+		ff.pwd.focus();
+		return false;
+	}
+}
