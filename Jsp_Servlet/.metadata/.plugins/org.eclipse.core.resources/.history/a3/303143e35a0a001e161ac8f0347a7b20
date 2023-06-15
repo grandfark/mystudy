@@ -1,8 +1,0 @@
-package com.kosa.quiz;
-
-public class GiftVO {
-	String g_name;
-	int g_no;
-	int g_start;
-	int g_end;
-}
