@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="./memo" method="post">
+		<h1 align="center">MEMO</h1>
+		<table border="1" align="center">
+			<tbody>
+				<tr>
+					<th><label for="id">ID:</label></th>
+					<td><input type="text" name="id" id="id"></td>
+				</tr>
+				<tr>
+					<th><label for="email">EMAIL:</label></th>
+					<td><input type="email" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<th><label for="content">CONTENT:</label></th>
+					<td><textarea name="content" id="content" cols="30" rows="10"></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					 <input type="submit" value="전송">&nbsp;&nbsp;
+            		<a href="memoList">목록보기</a>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

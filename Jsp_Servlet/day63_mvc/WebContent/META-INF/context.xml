@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+	<Resource name="jdbc/MemoDB"
+			auth="Container"
+			type="javax.sql.DataSource" 
+			driverClassName = "oracle.jdbc.OracleDriver"
+			url="jdbc:oracle:thin:@localhost:1521:orcl"
+			username="system" 
+			password="oracle"
+			
+			MaxWait="-1"	
+			MaxIdle="20"
+			
+	/>
+</Context>
+
+<!-- 추가분 
+	MaxWait="-1" 대기시간
+	MaxIdle="20" // 사용하지 않는 Idle(대기)상태의 최대 개수 식당앞에서 줄서있는 모습 떠올리기
+	MaxTotal="20" //connection 객체의 최대 개수 = 기본값:8개 -> 20개로 확장
+	MaxActive="20" //DataSource로부터 꺼낼 수 있는 최대 커넥션 개수 기본값 8개
+-->
